@@ -38,7 +38,7 @@ public class BookingList {
         int loc = 0;
 
         for (int i = 0; i < count; i++) {
-            if (bookinglist[i].getUser().equals(user)) {
+            if (bookinglist[i].getUser().equalsIgnoreCase(user)) {
                 loc = i;
             }
         }
